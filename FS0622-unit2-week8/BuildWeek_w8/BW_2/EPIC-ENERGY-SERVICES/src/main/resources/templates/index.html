@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic Energy</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+<style>
+.navbar {
+	background-color: transparent !important;
+}
+
+.navbar-brand {
+	padding: 0;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border: none;
+}
+
+.icons p {
+	font-weight: bolder;
+}
+
+.sole {
+	font-size: 70px;
+	color: rgb(255, 206, 12);
+}
+
+.vento {
+	font-size: 70px;
+	color: rgb(121, 122, 122);
+}
+
+.acqua {
+	font-size: 70px;
+	color: rgb(23, 125, 240);
+}
+
+#custom-cards .bi {
+	font-size: 40px;
+}
+
+#custom-cards small {
+	font-size: 20px;
+	font-weight: bold;
+}
+.carousel-item img{
+    filter: brightness(70%);
+}
+
+
+.left-align {
+    text-align: left;
+}
+
+.icons p{
+    font-size: 22px;
+}
+
+
+footer h3{
+    font-weight: 600;
+}
+
+.footericons i{
+    font-size: 30px;
+    margin-right: 15px;
+    color: #1EAF54;
+}
+
+.footer-contact i {
+    color: #1EAF54;
+}
+.footer-contact a {
+    text-decoration: none;
+    color: #212529;
+}
+
+h1{
+    color: #1EAF54;
+}
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="https://cdn.discordapp.com/attachments/1062060184379347096/1081135334282231919/epic-energy-high-resolution-logo-color-on-transparent-background.png" alt="Logo"
+                    width="120" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <a href="/login" class="btn btn-outline-success ms-auto">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------------------------------------------->
+
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="https://cdn.pixabay.com/photo/2016/04/27/20/13/wind-power-1357419_1280.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block left-align">
+                    <h2 class="display-6 fw-bold">Epic Energy Eolic</h2>
+                    <p class="fw-bolder">Il vento è una risorsa naturale che non si esaurisce e non produce emissioni di
+                        gas serra,<br> contribuendo quindi alla riduzione dell'inquinamento e delle emissioni di CO2.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://cdn.pixabay.com/photo/2017/03/13/07/34/photovoltaic-2138992_1280.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block left-align">
+                    <h2 class="display-6 fw-bold">Epic Energy Solar</h2>
+                    <p class="fw-bolder"> L'energia solare è una delle fonti di energia rinnovabile più promettenti per
+                        il futuro, <br>poiché è inesauribile e disponibile ovunque ci sia la luce del sole. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/aerial-drone-view-nature-romania-valley-carpathian-mountains-with-vidraru-dam-lake_1268-19336.jpg?w=1060&t=st=1677840288~exp=1677840888~hmac=e6248f7c3975e500d9d60cb23b7c373bae808cff65b571f350778b030743600a"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block left-align">
+                    <h2 class="display-6 fw-bold">Epic Energy Hydro</h2>
+                    <p class="fw-bolder">L'energia idroelettrica è una delle fonti di energia rinnovabile più utilizzate
+                        al mondo <br>e può essere prodotta sia da grandi dighe che da piccole centrali idroelettriche.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- Marketing messaging and featurettes
+        ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+    <div class="container col-xxl-8 px-3 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-md-6">
+                <img src="https://img.freepik.com/free-photo/close-up-environment-sign-collection_23-2148884839.jpg?w=900&t=st=1677787932~exp=1677788532~hmac=18fdb7caf165f4bc67bcf9beb4509e582c4c2524caf41efbbe0f857f4246ac6d"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Epic Energy</h1>
+                <p class="lead">Da oltre 10 anni, sviluppiamo soluzioni per la fornitura di Luce & Gas, progetti di
+                    efficienza e riqualificazione energetica, servizi e infrastrutture di ricarica legate alla mobilità
+                    sostenibile.<br>Trasformiamo l’energia in nuove opportunità con una forte attenzione all’ambiente,
+                    alla trasparenza e alle persone.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container icons">
+        <div class="row icons pb-5 m border-bottom">
+            <div class="col-md-4 text-center">
+                <i class="bi bi-wind vento"></i>
+                <p>Energia eolica</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-record-circle-fill sole"></i>
+                <p>Energia solare</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-droplet acqua"></i>
+                <p>Energia idroelettrica</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container px-5 py-5" id="custom-cards">
+        <h2 class="pb-2 text-center display-6 fw-bolder text-dark">Progetti realizzati</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark  shadow-lg"
+                    style="background-image: url('https://img.freepik.com/free-photo/wind-turbines-generating-electricity-sunset-korea_335224-421.jpg?w=900&t=st=1677794368~exp=1677794968~hmac=2bb6cf6e74ca87553feca2015016e7ebda837ebc32314ac72870c77fd17bd39b');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5  mb-4 display-6 lh-1 fw-bold text-white">Parco eolico marino</h3>
+                        <ul class="d-flex list-unstyled mt-auto text-white">
+                            <li class="me-auto">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Corea</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark  shadow-lg"
+                    style="background-image: url('https://img.freepik.com/free-photo/close-up-electric-car-charging_23-2148972402.jpg?w=996&t=st=1677794578~exp=1677795178~hmac=bd376339132ee2d58319dc4f768e768f4d60a3457f83f99d5e956c45bbe330b0');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5  mb-4 display-6 lh-1 fw-bold">Stazione di ricarica</h3>
+                        <ul class="d-flex list-unstyled mt-auto text-white">
+                            <li class="me-auto">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Italia</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark  shadow-lg"
+                    style="background-image: url('https://img.freepik.com/free-photo/aerial-view-solar-power-plant_661209-40.jpg?w=826&t=st=1677794126~exp=1677794726~hmac=9cc1cc384f97b940a00712ed8f495df674c5b8d181ca109fb93619b3d33e0bda');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Campo fotovoltaico<br><br><br><br>
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto text-white">
+                            <li class="me-auto">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Grecia</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer >
+        <div class="footer-top text-dark pb-3 border-top pt-3 mt-4">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
+                        <img class="logo-footer" src="https://cdn.discordapp.com/attachments/1062060184379347096/1081135334282231919/epic-energy-high-resolution-logo-color-on-transparent-background.png" alt="logo-footer"  width="200"
+                        height="50"
+                            data-at2x="assets/img/logo.png">
+                        <p class="pt-4">
+                            We are a young company always looking for new and creative ideas to help you with our
+                            products in your everyday work.
+                        </p>
+                     
+                    </div>
+                    <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+                        <h3>Contact</h3>
+                        <p class="pt-3"><i class="fas fa-map-marker-alt"></i> Via Rossini 10, 10136 Torino Italy</p>
+                        <p><i class="fas fa-phone"></i> Phone: (0039) 333 12 68 347</p>
+                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">epic@energy.com</a>
+                        </p>
+                        <p><i class="fab fa-skype"></i> Skype: epic_energy</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                        <h3>Follow us</h3>
+                        <p class="footericons pt-3">
+                            <a href="#"><i class="fab fa-facebook "></i></a>
+                            <a href="#"><i class="fab fa-twitter "></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </footer>
+
+</body>
+
+</html>
